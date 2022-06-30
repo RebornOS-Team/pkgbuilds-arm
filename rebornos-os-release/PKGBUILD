@@ -1,0 +1,25 @@
+# RebornOS os-release file updater
+# Maintainer: Rafael from RebornOS <rafael@rebornos.org>
+
+pkgname=rebornos-os-release
+fname=os-release
+pkgver=20220629
+pkgrel=1
+pkgdesc="RebornOS os-release file info"
+arch=('arm' 'armv7h' 'armv6h' 'aarch64')
+url="https://gitlab.com/rebornos-team/rebornos-special-system-files/rebornosos-release"
+license=('GPL3')
+backup=(usr/lib/os-release)
+source=('os-release')
+sha256sums=('3ec32134892664339967645b1455f65bb5e7827d4bc85f22f9e382ad9656346a')
+
+install=${fname}.install
+
+pkgver() {
+    date +%Y%m%d
+}
+
+package() {
+    mkdir -p ${pkgdir}/usr/lib/
+    install -m644 ${srcdir}/${fname} ${pkgdir}/usr/lib/${fname}-new
+}
