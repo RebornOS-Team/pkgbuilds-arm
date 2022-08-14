@@ -1,0 +1,22 @@
+# Maintainer: Panda <panda@rebornos.org>
+
+pkgname=rebornos-mirrorlist
+filename=reborn-mirrorlist
+pkgver=20220719
+pkgrel=1
+pkgdesc="RebornOS ARM mirrorlist"
+arch=('any')
+license=('GPL3')
+source=(${filename})
+install=${pkgname}.install
+sha256sums=('131b092d5a6205689c2821ec952b3d7e05ce00e7173efcedaeaa7b7029baf109')
+
+pkgver() {
+    date +%Y%m%d
+}
+
+package() {
+  mkdir -p ${pkgdir}/etc/pacman.d
+  install -m644 ${srcdir}/${filename} ${pkgdir}/etc/pacman.d/${filename}-new
+}
+

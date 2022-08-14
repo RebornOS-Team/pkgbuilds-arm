@@ -1,0 +1,4 @@
+### RebornOS ARM mirrorlist
+#Github mirror
+
+Server= https://github.com/RebornOS-Developers/repo-testing/raw/main/$repo/os/$arch
