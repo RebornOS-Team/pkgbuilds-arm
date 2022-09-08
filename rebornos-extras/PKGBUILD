@@ -1,0 +1,37 @@
+# Maintainer: Panda <panda@rebornos.org>
+#
+
+pkgname=rebornos-extras
+pkgver=1.0
+pkgrel=2
+pkgdesc="RebornOS extras"
+arch=('aarch64')
+url=""
+license=('GPL')
+dependencies=('btrfs-progs' 'parted' 'util-linux')
+source=('zswap-arm.service'
+        'oemcleanup.service'
+        'resizefs.service'
+        'pacman-init.service'
+        'resizefs'
+        'zswap-arm-ctrl')
+
+sha256sums=('5e19d7f26f055e7a9f5339f3232f9947b80799dde160ea21958c64df380946f9'
+            '94d040c1ea009f2524c1fe293c8c95ed372991f81c25f7f90a85aed78c79bbbc'
+            'cb90cfa0a23952d1be0dc5a79e384c249f1ae45926cadbf78bd39912683ede48'
+            'dfaef1d04278ccce90a00735ca3cf0cfa021947a242d7b4f552c2f7b891e2344'
+            'c6146cb3f39782b62cfdd6a9b0c465e63acecff5da95e7753b92e15c5bd63657'
+            'bcdfe9557987f0ef4777e1ba9e5d9846bb2a58c676aab01fba7e9d99fe9f95a9')
+prepare() {
+    :
+}
+
+package() {
+    cd $srcdir
+    install -Dm644 zswap-arm.service "$pkgdir/usr/lib/systemd/system/zswap-arm.service"
+    install -Dm644 oemcleanup.service "$pkgdir/usr/lib/systemd/system/oemcleanup.service"
+    install -Dm644 resizefs.service "$pkgdir/usr/lib/systemd/system/resizefs.service"
+    install -Dm644 pacman-init.service "$pkgdir/usr/lib/systemd/system/pacman-init.service"
+    install -Dm755 resizefs "$pkgdir/usr/bin/resizefs"
+    install -Dm755 zswap-arm-ctrl "$pkgdir/usr/lib/systemd/scripts/zswap-arm-ctrl"
+}

@@ -1,0 +1,9 @@
+pkg/
+src/
+*.zst
+*.sig
+*.tar.gz
+*.SRCINFO
+*/.git
+!rebornos-mate-skel/src
+!rebornos-ukui-skel/src
