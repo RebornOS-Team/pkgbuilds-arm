@@ -1,0 +1,10 @@
+--- peony-extensions.pro        2022-09-08 15:00:46.844136433 +0000
++++ peony-extensions-new.pro    2022-09-08 15:00:29.943319764 +0000
+@@ -11,6 +11,6 @@
+     peony-set-wallpaper                 \
+     peony-bluetooth-plugin              \
+     peony-engrampa-menu-plugin          \
+-    peony-extension-computer-view       \
++#    peony-extension-computer-view       \
+     peony-menu-plugin-mate-terminal     \
+ #    test-computer-view

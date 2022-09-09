@@ -1,0 +1,18 @@
+pkgbase = python-rst.linker
+	pkgdesc = Can add links and perform other custom replacements to rst
+	pkgver = 2.3.1
+	pkgrel = 1
+	url = https://github.com/jaraco/rst.linker
+	arch = any
+	license = MIT
+	makedepends = python-build
+	makedepends = python-installer
+	makedepends = python-setuptools-scm
+	makedepends = python-wheel
+	depends = python
+	depends = python-dateutil
+	depends = python-six
+	source = https://files.pythonhosted.org/packages/source/r/rst.linker/rst.linker-2.3.1.tar.gz
+	sha256sums = b998df6a456327986b8059584e754d598d88ac8b2eddba9e1425f90d54e66133
+
+pkgname = python-rst.linker

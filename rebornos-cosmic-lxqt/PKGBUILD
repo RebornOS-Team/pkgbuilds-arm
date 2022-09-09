@@ -1,0 +1,27 @@
+# Maintainer: Rafael <rafael@rebornos.org>
+# Maintainer: Keegan Milsten <keeganmilsten@gmail.com>
+# 2020.12.26 pamac-tray-appindicator removed
+# 2021.01.21 onboard and mousetweaks added
+# 2021.05.31 xsettingsd added
+# 2021.06.03 pamac-aur removed
+# 2021.06.08 pavucontrol-qt added
+# 2021.06.23 discover removed
+# 2022.04.08 gnome-icon-theme removed
+
+pkgname=rebornos-cosmic-lxqt
+pkgver=1.0
+pkgrel=2
+pkgdesc='Cosmic package for RebornOS LXQt'
+url='https://gitlab.com/rebornos-team/rebornos-cosmic-packages/current/rebornos-cosmic-lxqt'
+arch=('any')
+license=('GPL3')
+depends=('lxqt-qtplugin' 'liblxqt' 'lxqt-panel' 'pcmanfm-qt' 'lxqt-archiver' 'lxqt-sudo' 
+         'lxqt-session' 'lxqt-runner' 'lxqt-powermanagement' 'lxqt-policykit' 
+         'lxqt-openssh-askpass' 'lxqt-notificationd' 'lxqt-globalkeys' 'lxqt-config' 
+         'lxqt-admin' 'lxqt-about' 'lximage-qt' 'lxqt-themes' 'lxqt-build-tools' 
+         'obconf-qt' 'openbox' 'qterminal' 'screengrab'
+         'packagekit-qt5' 'spectacle' 'xdg-user-dirs' 'sddm' 'breeze-icons' 
+         'arc-gtk-theme' 'oxygen-icons' 'libstatgrab' 'libsysstat' 
+         'network-manager-applet' 'file-roller' 'unace' 'kate'
+         'gucharmap' 'xscreensaver' 'xautolock' 'lxqt-build-tools' 'onboard' 'mousetweaks' 
+         'xsettingsd' 'pavucontrol-qt')
