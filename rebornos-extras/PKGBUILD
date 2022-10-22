@@ -3,7 +3,7 @@
 
 pkgname=rebornos-extras
 pkgver=1.0
-pkgrel=2
+pkgrel=3
 pkgdesc="RebornOS extras"
 arch=('aarch64')
 url=""
@@ -15,13 +15,13 @@ source=('zswap-arm.service'
         'pacman-init.service'
         'resizefs'
         'zswap-arm-ctrl')
-
+ 
 sha256sums=('5e19d7f26f055e7a9f5339f3232f9947b80799dde160ea21958c64df380946f9'
-            '94d040c1ea009f2524c1fe293c8c95ed372991f81c25f7f90a85aed78c79bbbc'
+            '6d67dd988cce78410d43219359a614868f5e01158da32e7cb29d86e7a037162c'
             'cb90cfa0a23952d1be0dc5a79e384c249f1ae45926cadbf78bd39912683ede48'
-            'dfaef1d04278ccce90a00735ca3cf0cfa021947a242d7b4f552c2f7b891e2344'
+            'b63343eea4caad4730343f972422c47962d4190f4081dd80a9963ef1c2c6ee82'
             'c1bf6a76e215f71c25297d3490c503409292613ba4866cca7a8269e6b789f0a0'
-            'bcdfe9557987f0ef4777e1ba9e5d9846bb2a58c676aab01fba7e9d99fe9f95a9')
+            '78d72fd0c404730462955d19a2132d25927e8a91e91fa017a8e94169c2df6da2')
 
 package() {
     cd $srcdir

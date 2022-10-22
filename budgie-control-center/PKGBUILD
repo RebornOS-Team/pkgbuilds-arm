@@ -2,7 +2,7 @@
 
 pkgname=budgie-control-center
 pkgver=1.1.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Budgie's main interface to configure various aspects of the desktop"
 url="https://github.com/BuddiesOfBudgie/budgie-control-center"
 license=(GPL)
@@ -16,7 +16,7 @@ optdepends=('system-config-printer: Printer settings'
             'rygel: media sharing'
             'openssh: remote login'
             'power-profiles-daemon: Power profiles support')
-conflicts=(gnome-control-center)
+# conflicts=(gnome-control-center)
 source=("https://github.com/BuddiesOfBudgie/$pkgname/releases/download/v$pkgver/$pkgname-$pkgver.tar.xz"{,.asc})
 sha256sums=('1d0de48749c10e43f1e66b3a95557118cbd6815b659c4881f040d324dc7a8abc'
             'SKIP')

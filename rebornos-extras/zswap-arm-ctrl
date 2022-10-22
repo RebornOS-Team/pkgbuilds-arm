@@ -1,7 +1,7 @@
 #!/bin/bash
 
 start() {
-ZRAM_SIZE_PERCENT=150
+ZRAM_SIZE_PERCENT=110
 
   (( MEM_TOTAL= `cat /proc/meminfo|grep MemTotal|awk '{print $2}'` * 1024 ))
   (( MEM= MEM_TOTAL * $ZRAM_SIZE_PERCENT / 100 ))

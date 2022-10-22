@@ -12,3 +12,4 @@ electron19/depot_tools
 electron19/chromium-102-patchset-6.tar.xz
 code/code
 *.xz
+budgie-control-center/*.tar.xz.asc
