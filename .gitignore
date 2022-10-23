@@ -13,3 +13,6 @@ electron19/chromium-102-patchset-6.tar.xz
 code/code
 *.xz
 budgie-control-center/*.tar.xz.asc
+anbox-image-aarch64/android.img
+anbox-modules-dkms/anbox-modules
+python2/Python-*.tar.xz.asc

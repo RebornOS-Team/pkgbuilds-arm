@@ -1,0 +1,21 @@
+# Maintainer Panda <panda@rebornos.org>
+
+pkgname=anbox-image-aarch64
+pkgver=0_20200520
+pkgrel=7
+pkgdesc="Anbox image for ARM64"
+arch=(aarch64)
+url="https://anbox.postmarketos.org"
+license=('custom')
+groups=('android-appsupport')
+depends=(anbox)
+provides=(anbox-image)
+
+source=(https://de.mirror.rebornos.org/anbox/android.img
+       display_settings.xml)
+md5sums=('d3e07c88d61a517815ffecdb1ad37031'
+         'dd8cad197e12d2c087ee6673cf39de1f')
+package() {
+  install -Dm644 "$srcdir"/android.img "$pkgdir"/var/lib/anbox/android.img
+  install -Dm644 "$srcdir"/display_settings.xml "$pkgdir"/var/lib/anbox/data/system/display_settings.xml
+}
