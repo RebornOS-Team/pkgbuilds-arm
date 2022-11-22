@@ -16,3 +16,4 @@ budgie-control-center/*.tar.xz.asc
 anbox-image-aarch64/android.img
 anbox-modules-dkms/anbox-modules
 python2/Python-*.tar.xz.asc
+/freeoffice/*.tgz
