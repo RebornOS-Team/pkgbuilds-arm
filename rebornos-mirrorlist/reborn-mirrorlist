@@ -1,8 +1,14 @@
 ### RebornOS ARM mirrorlist
-### Mirrors as of 16th Novemeber 2022
+### Mirrors as of 3rd of December 2022
 
 # Main mirror
 Server = https://de.mirror.rebornos.org/repo/$repo/os/$arch/
+# Clarkson University mirror (US)
+Server = https://mirror.clarkson.edu/RebornOS-ARM/$repo/os/$arch/
+# freedif mirror 1gbps (Singapore)
+Server = https://mirror.freedif.org/RebornOS-ARM/$repo/os/$arch/
+# Oregon State University mirror 4gbps (US)
+Server = http://ftp.osuosl.org/pub/rebornos/$repo/os/$arch/
 # OCI.OBS.PROD@PANDAA (eu-frankfurt-1)
 Server = http://de.cdn.soulharsh007.rocks/RebornOS-ARM/$repo/os/$arch/
 # CF.R2.PROD@SH007 (auto)

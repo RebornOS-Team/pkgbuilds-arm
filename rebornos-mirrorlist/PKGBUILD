@@ -2,14 +2,14 @@
 
 pkgname=rebornos-mirrorlist
 filename=reborn-mirrorlist
-pkgver=20221116
+pkgver=20221203
 pkgrel=1
 pkgdesc="RebornOS ARM mirrorlist"
 arch=('any')
 license=('GPL3')
 source=(${filename})
 install=${pkgname}.install
-md5sums=('400472f98faa7b0966bdedd2dd05509c')
+md5sums=('dde5c19c58d2d05564233f305491b03e')
 
 pkgver() {
     date +%Y%m%d
